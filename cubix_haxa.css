@@ -1,0 +1,75 @@
+/* By NexFord */
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+input[type='text'] {
+    text-transform:uppercase;
+}
+
+#bg {
+  background:
+      radial-gradient(circle at 50% 0,
+        rgba(255,0,0,.5),
+        rgba(255,0,0,0) 70.71%),
+      radial-gradient(circle at 6.7% 75%,
+        rgba(0,0,255,.5),
+        rgba(0,0,255,0) 70.71%),
+      radial-gradient(circle at 93.3% 75%,
+        rgba(0,255,0,.5),
+        rgba(0,255,0,0) 70.71%) beige;
+}
+
+.container {
+  background-color: #808080;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#convi {
+  font-family: monospace;
+  padding: 20px;
+  padding-left: 40px;
+  margin: 20px;
+  background-color: rgba(80, 80, 80, 0.1);
+  border: 5px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: #000000;
+  font-size: 10em;
+  transition-duration: 1s;
+}
+#convi:hover {
+  background-color: rgba(80, 80, 80, 0.2);
+}
+#convi:active {
+  background-color: rgba(80, 80, 80, 0.3);
+}
+
+#result {
+  font-family: monospace;
+  font-size: 10em;
+}
+
+@media screen and (max-width: 1600px) {
+  #convi {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #convi {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #convi {
+    width: 70vw;
+  }
+}
